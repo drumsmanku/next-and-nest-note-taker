@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex {
+  display: flex;
+  height: 100%;
+}
+
+.container {
+  display: flex; /* Use flexbox to create a flex container */
+  align-items: stretch; /* Adjust alignment to stretch both columns */
+}
