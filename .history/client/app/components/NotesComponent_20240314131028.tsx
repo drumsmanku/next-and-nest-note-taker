@@ -99,19 +99,17 @@ const NotesComponent: React.FC = () => {
           <div className='flex flex-col w-full lg:w-[80%] border-2 rounded-lg  bg-yellow-400 px-20 py-10'>
             <input
               type="text"
-              className='mb-4 border-2 rounded-md pl-3'
               placeholder="Title"
               value={editNoteTitle}
               onChange={(e) => setEditNoteTitle(e.target.value)}
             />
             <textarea
               placeholder="Description"
-              className='mb-4 border-2 rounded-md pl-3'
               value={editNoteDescription}
               onChange={(e) => setEditNoteDescription(e.target.value)}
             />
-            <button className="px-4 py-1.5 text-white h-8 text-md rounded-full border-none bg-[#36416A] mt-8"  onClick={handleEditNote}>Save</button>
-            <button className="px-4 py-1.5 text-white h-8 text-md rounded-full border-none bg-[#36416A] mt-8" onClick={() => setShowEditPopup(false)}>Cancel</button>
+            <button onClick={handleEditNote}>Save</button>
+            <button onClick={() => setShowEditPopup(false)}>Cancel</button>
           </div>
         )}
         <ul className='flex flex-wrap overflow-auto justify-center'>
